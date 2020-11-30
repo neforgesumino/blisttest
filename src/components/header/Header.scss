@@ -34,12 +34,14 @@
   font-weight: 300;
   letter-spacing: 0.1em;
   padding-bottom: 52px;
+  margin-bottom: 55px;
   background-image: url("./images/DoubleArrow.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  margin-bottom: 55px;
 
-  /*** ANIMATION ***/
+
+
+  /*** ANIMATION 
   
   animation-name: pop-up;
   animation-duration: 3s;
@@ -58,7 +60,7 @@
 
   100% {
     transform: translate(0, 0);
-  }
+  } ***/
 }
 
 .header__nav-button {

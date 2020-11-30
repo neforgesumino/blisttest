@@ -5,27 +5,27 @@
   display: flex;
   justify-content: center;
   padding-top: 37px;
-  padding-bottom: 37px;
+  padding-bottom: 37px; 
+  margin-bottom: 72px; 
   border-bottom: $border-grey;
-  margin-bottom: 72px;
 
   &--header {
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
     border-bottom: $border;
 
   }
 }
 
 .menu__list {
-  margin: 0;
-  padding: 0;
-  width: 592px;
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  list-style: none;
+  width: 593px;
+  margin: 0;
+  padding: 0;
   
   &--header {
-    width: 614px;
+    width: 615px;
   }
 }
 
@@ -34,19 +34,19 @@
   font-size: 24px;
   line-height: 26px;
 
-  a {
-    color: $font-color-grey;
-    font-family: $nexa;
-    text-decoration: none;
+  &-options {
+  color: $font-color-grey;
+  font-family: $nexa;
+  text-decoration: none;
+  }
+  
+  &-options:focus,
+  &-options:hover,
+  &-options:active {
+    color: $font-color-dark-grey;
   }
 
-  a:focus,
-  a:hover,
-  a:active {
-    border-bottom: $border;
-  }
-
-  &--header a {
+  &--header .menu__item-options {
     color: $font-color-white;
     font-family: $pt-sans;
     font-weight: 400;
@@ -55,6 +55,7 @@
 }
 
 .active-link {
+  color: $font-color-dark-grey;
   border-bottom: $border;
   cursor: default;
 }
@@ -112,7 +113,7 @@
   .menu__item {
     margin-bottom: 10px;
 
-    & a {
+    & .menu__item-options {
       font-family: "PT Sans", sans-serif;
     }
   }

@@ -1,10 +1,31 @@
 @import "./../../scss/variables.scss";
 
-.about {
+.about-me {
   padding-left: 67px;
   padding-right: 67px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.about-me__inner {
+  /* margin-bottom: 80px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.about-me__photo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  align-self: center; 
 }
 
 .about-me__image {
@@ -12,57 +33,42 @@
   height: 700px;
 }
 
-.about-me__photo {
-  width: 50%;
-  padding-right: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
-}
-
-.about-me__inner {
-  display: flex;
-  margin-bottom: 80px;
-}
 
 .about-me__description {
-  padding-top: 51px;
-  padding-left: 26px;
   width: 50%;
+  padding-left: 1.2rem;
   font-family: $open-sans;
   font-weight: 400;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-me__title {
-  text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  text-transform: uppercase;
   font-size: 60px;
   line-height: 120px;
   letter-spacing: 0.1em;
   font-weight: 400;
-  margin-bottom: 31px;
 }
 
 .about-me__text {
-  padding: 0;
-  margin: 0;
+  font-family: $open-sans;
   font-size: 24px;
   line-height: 50px;
-  font-family: $open-sans;
   font-weight: 300;
   letter-spacing: 0.025em;
-  margin-bottom: 25px;
   max-width: 676px;
 }
 
 .about-me__name {
-  margin: 0;
-  padding: 0;
   font-size: 36px;
   line-height: 50px;
-  margin-top: 44px;
+  font-weight: 400;
 }
 
 

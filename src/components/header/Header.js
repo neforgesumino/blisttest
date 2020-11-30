@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, createRef } from "react";
 import Menu from "../menu/Menu";
 import "./Header.scss";
 
 function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
-  const ref = React.createRef();
-
+  const ref = createRef();
   const scrollClickHandler = () => {
     const top = ref.current.clientHeight;
     window.scrollTo({
@@ -14,7 +13,6 @@ function Header() {
       top: top,
     });
   };
-  
   const menuClickHandler = () => {
     setIsOpen(!isOpen);
   };

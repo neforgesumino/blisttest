@@ -1,16 +1,29 @@
 
 @import './fonts.scss';
+
+/*** FONTS ***/
+
 $open-sans: "Open Sans", Arial, sans-serif;
 $pt-sans: "PT Sans", Arial, sans-serif;
 $nexa: "Nexa Light", Arial, sans-serif;
+
+/*** MAIN COLOURS ***/
+
+$background: #ffffff;
 $font-color-white: #f1f1f1;
 $font-color-grey: #dedede;
+$font-color-dark-grey: #bebebe;
 $font-color-black: #202020;
+
+/*** BORDER COLOURS ***/
 
 $border-color-white: #f1f1f1;
 $border-color-grey-dark: #bebebe;
 $border: 1px solid $border-color-white;
 $border-grey: 1px solid $border-color-grey-dark;
-$background: #ffffff;
+
+/*** MEDIA WIDTH ***/
+
 $desktop-width: 1200px;
 $tablet-width: 767px;
+$mobile-width: 320px;

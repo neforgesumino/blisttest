@@ -13,22 +13,22 @@ function Menu({ isHeader, isOpen }) {
     <nav className={menuClassName}>
       <ul className={isHeader ? "menu__list  menu__list--header" : "menu__list"}>
         <li className={isHeader ? "menu__item menu__item--header" : "menu__item"}>
-          <NavLink to="/home" activeClassName="active-link">
+          <NavLink to="/home" activeClassName="active-link"  className="menu__item-options">
             Home
           </NavLink>
         </li>
         <li className={isHeader ? "menu__item menu__item--header" : "menu__item"}>
-          <NavLink to="/about" activeClassName="active-link">
+          <NavLink to="/about" activeClassName="active-link" className="menu__item-options">
             About Me
           </NavLink>
         </li>
         <li className={isHeader ? "menu__item menu__item--header" : "menu__item"}>
-          <NavLink to="/portfolio" activeClassName="active-link">
+          <NavLink to="/portfolio" activeClassName="active-link"  className="menu__item-options">
             Portfolio
           </NavLink>
         </li>
         <li className={isHeader ? "menu__item menu__item--header" : "menu__item"}>
-          <NavLink to="/contact" activeClassName="active-link">
+          <NavLink to="/contact" activeClassName="active-link"  className="menu__item-options">
             Contact
           </NavLink>
         </li>
